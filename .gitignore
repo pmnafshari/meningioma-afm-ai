@@ -4,18 +4,13 @@ __pycache__/
 *.pyo
 *.pyd
 
-# environments
+# virtual environment
 venv/
-env/
+.env
 .venv/
 
 # notebooks
 .ipynb_checkpoints
-
-# dataset
-data/raw_afm/*
-data/processed/*
-data/dataset/*
 
 # mac
 .DS_Store
@@ -31,6 +26,14 @@ checkpoints/
 # results
 results/*
 
-# virtual environment
-venv/
-.env
+# processed data
+data/processed/*
+data/dataset/*
+
+# raw AFM data
+data/raw_afm/*
+!data/raw_afm/.gitkeep
+
+# large scientific files
+*.h5
+*.hdf5
