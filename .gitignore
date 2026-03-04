@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# environments
+venv/
+env/
+.venv/
+
+# notebooks
+.ipynb_checkpoints
+
+# dataset
+data/raw_afm/*
+data/processed/*
+data/dataset/*
+
+# mac
+.DS_Store
+
+# logs
+*.log
+
+# models
+*.pth
+*.pt
+checkpoints/
+
+# results
+results/*
