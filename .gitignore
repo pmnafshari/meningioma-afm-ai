@@ -37,3 +37,5 @@ data/raw_afm/*
 # large scientific files
 *.h5
 *.hdf5
+
+data/processed/*
