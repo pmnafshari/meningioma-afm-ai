@@ -30,3 +30,7 @@ checkpoints/
 
 # results
 results/*
+
+# virtual environment
+venv/
+.env
