@@ -1,41 +1,46 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+Python cache
 
-# virtual environment
+pycache/
+*.pyc
+
+Virtual environment
+
 venv/
 .env
 .venv/
 
-# notebooks
-.ipynb_checkpoints
+Mac files
 
-# mac
 .DS_Store
 
-# logs
+Logs
+
 *.log
 
-# models
-*.pth
+Model files
+
 *.pt
+*.pth
 checkpoints/
 
-# results
-results/*
+Results
 
-# processed data
+results/
+
+Processed data
+
 data/processed/*
+
+Dataset
+
 data/dataset/*
 
-# raw AFM data
+Raw AFM files
+
 data/raw_afm/*
 !data/raw_afm/.gitkeep
 
-# large scientific files
+Large scientific files
+
 *.h5
 *.hdf5
-
-data/processed/*
