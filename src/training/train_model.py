@@ -76,11 +76,17 @@ class Trainer:
 
     def train(self):
 
+        final_loss = None
+
         for epoch in range(self.epochs):
 
             loss = self.train_epoch()
+
+            final_loss = loss
 
             print("epoch", epoch)
             print("train loss", loss)
 
         torch.save(self.model.state_dict(), "results/model.pth")
+
+        return final_loss
