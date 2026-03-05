@@ -64,3 +64,23 @@ data/dataset/*
 *.pth
 
 results/*
+
+venv/
+__pycache__/
+*.pyc
+
+.DS_Store
+
+data/raw_afm/*
+!data/raw_afm/.gitkeep
+
+data/processed/*
+data/dataset/*
+
+*.h5
+*.hdf5
+
+*.pt
+*.pth
+
+results/*
