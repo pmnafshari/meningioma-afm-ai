@@ -84,3 +84,7 @@ data/dataset/*
 *.pth
 
 results/*
+
+results/*
+*.pth
+*.pt
