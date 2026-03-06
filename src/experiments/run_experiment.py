@@ -6,7 +6,7 @@ sys.path.append(str(project_root))
 
 from src.training.train_model import Trainer
 from src.experiments.experiment_logger import ExperimentLogger
-
+from src.training.plot_training_curve import plot_training_curve
 
 logger = ExperimentLogger()
 
@@ -26,7 +26,8 @@ def run_experiment(config):
         epochs=config["epochs"]
     )
 
-    final_loss = trainer.train()
+    losses = trainer.train()
+    final_loss = losses[-1]
 
     logger.log(
         config["model_name"],
@@ -35,3 +36,5 @@ def run_experiment(config):
         config["epochs"],
         final_loss
     )
+
+    plot_training_curve(losses, config["model_name"])
