@@ -1,50 +1,3 @@
-Python cache
-
-pycache/
-*.pyc
-
-Virtual environment
-
-venv/
-.env
-.venv/
-
-Mac files
-
-.DS_Store
-
-Logs
-
-*.log
-
-Model files
-
-*.pt
-*.pth
-checkpoints/
-
-Results
-
-results/
-
-Processed data
-
-data/processed/*
-
-Dataset
-
-data/dataset/*
-
-Raw AFM files
-
-data/raw_afm/*
-!data/raw_afm/.gitkeep
-
-Large scientific files
-
-*.h5
-*.hdf5
-
 venv/
 __pycache__/
 *.pyc
@@ -64,27 +17,4 @@ data/dataset/*
 *.pth
 
 results/*
-
-venv/
-__pycache__/
-*.pyc
-
-.DS_Store
-
-data/raw_afm/*
-!data/raw_afm/.gitkeep
-
-data/processed/*
-data/dataset/*
-
-*.h5
-*.hdf5
-
-*.pt
-*.pth
-
-results/*
-
-results/*
-*.pth
-*.pt
+!results/*.png
