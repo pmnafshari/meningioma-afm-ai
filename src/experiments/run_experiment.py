@@ -5,12 +5,15 @@ project_root = Path(__file__).resolve().parents[2]
 sys.path.append(str(project_root))
 
 from src.training.train_model import Trainer
+from src.experiments.experiment_logger import ExperimentLogger
+
+
+logger = ExperimentLogger()
 
 
 def run_experiment(config):
 
     print("starting experiment")
-
     print("model", config["model_name"])
     print("learning rate", config["learning_rate"])
     print("batch size", config["batch_size"])
@@ -23,4 +26,12 @@ def run_experiment(config):
         epochs=config["epochs"]
     )
 
-    trainer.train()
+    final_loss = trainer.train()
+
+    logger.log(
+        config["model_name"],
+        config["learning_rate"],
+        config["batch_size"],
+        config["epochs"],
+        final_loss
+    )
