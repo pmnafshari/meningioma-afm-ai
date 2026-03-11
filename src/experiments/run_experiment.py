@@ -38,3 +38,13 @@ def run_experiment(config):
     )
 
     plot_training_curve(losses, config["model_name"])
+
+
+if __name__ == "__main__":
+    test_config = {
+        "model_name": "resnet18",
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "epochs": 1
+    }
+    run_experiment(test_config)

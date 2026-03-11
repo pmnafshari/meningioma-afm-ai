@@ -33,12 +33,14 @@ class Trainer:
 
         self.train_loader = create_dataloader(
             "data/dataset/train",
-            batch_size=batch_size
+            batch_size=batch_size,
+            augment=True
         )
 
         self.val_loader = create_dataloader(
             "data/dataset/val",
-            batch_size=batch_size
+            batch_size=batch_size,
+            augment=False
         )
 
         self.criterion = nn.CrossEntropyLoss()
