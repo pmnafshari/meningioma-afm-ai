@@ -1,20 +1,25 @@
 venv/
 __pycache__/
 *.pyc
+*.pyo
 
 .DS_Store
 
 data/raw_afm/*
-!data/raw_afm/.gitkeep
-
 data/processed/*
 data/dataset/*
 
 *.h5
 *.hdf5
 
-*.pt
 *.pth
+*.pt
 
 results/*
 !results/*.png
+!results/*.csv
+!results/*.pdf
+
+notebooks/.ipynb_checkpoints
+
+materials/*
