@@ -1,0 +1,9 @@
+                   precision    recall  f1-score   support
+
+MENINGOTHELIAL_G1       0.91      0.89      0.90       174
+MENINGOTHELIAL_G2       0.80      0.80      0.80        79
+  PSAMMOMATOUS_G1       0.88      1.00      0.94        30
+
+         accuracy                           0.87       283
+        macro avg       0.86      0.89      0.88       283
+     weighted avg       0.87      0.87      0.87       283
