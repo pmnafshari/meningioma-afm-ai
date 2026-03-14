@@ -25,3 +25,5 @@ notebooks/.ipynb_checkpoints
 materials/*
 data/curve_images/
 !data/dataset/
+experiments/results.csv
+experiments/plots/
