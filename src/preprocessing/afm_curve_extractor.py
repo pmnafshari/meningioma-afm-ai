@@ -1,12 +1,14 @@
+import matplotlib
+matplotlib.use("Agg")
+
 import h5py
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-
 class AFMCurveExtractor:
 
-    def __init__(self, input_dir="data/raw_afm", output_dir="data/curve_images"):
+    def __init__(self, input_dir="data/raw_afm/materials", output_dir="data/curve_images"):
 
         self.input_dir = Path(input_dir)
         self.output_dir = Path(output_dir)
@@ -18,49 +20,37 @@ class AFMCurveExtractor:
 
         h5_files = list(self.input_dir.rglob("*.h5"))
 
-        for file in h5_files:
+        for file_path in h5_files:
 
-            self.process_file(file)
+            sample = file_path.parent.name.replace(" ", "").replace("_","")
+            self.process_file(file_path, sample)
 
 
-    def process_file(self, file_path):
+    def process_file(self, file_path, sample):
 
         with h5py.File(file_path, "r") as f:
 
-            for key in f.keys():
+            for map_key in f.keys():
 
-                data = np.array(f[key])
+                group = f[map_key]
 
-                if data.ndim < 3:
+                if "force" not in group:
                     continue
 
-                maps = data.shape[0]
-                points = data.shape[1]
+                curve = np.array(group["force"])
 
-                for m in range(maps):
-                    for p in range(points):
-
-                        curve = data[m, p, :, 0]
-
-                        self.save_curve_image(
-                            curve,
-                            file_path.stem,
-                            f"{m}_{p}"
-                        )
+                self.save_curve_image(curve, sample, map_key)
 
 
-    def save_curve_image(self, curve, sample_name, index):
+    def save_curve_image(self, curve, sample, index):
 
         plt.figure(figsize=(3,3))
-
         plt.plot(curve, color="black", linewidth=1)
-
         plt.axis("off")
 
-        filename = f"{sample_name}_{index}.png"
+        filename = f"{sample}_{index}.png".replace("__","_")
 
         save_path = self.output_dir / filename
 
         plt.savefig(save_path, bbox_inches="tight", pad_inches=0)
-
         plt.close()

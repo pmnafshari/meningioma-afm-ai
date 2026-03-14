@@ -9,7 +9,7 @@ class AFMRealDatasetBuilder:
     def __init__(self):
 
         self.images_dir = Path("data/curve_images")
-        self.labels_file = Path("labels.csv")
+        self.labels_file = Path("sample_mapping.csv")
         self.dataset_dir = Path("data/dataset")
 
         self.train_ratio = 0.7
@@ -18,6 +18,7 @@ class AFMRealDatasetBuilder:
 
         self.dataset_dir.mkdir(parents=True, exist_ok=True)
 
+
     def load_labels(self):
 
         df = pd.read_csv(self.labels_file)
@@ -25,7 +26,6 @@ class AFMRealDatasetBuilder:
         label_map = {}
 
         for _, row in df.iterrows():
-
             label_map[row["sample"]] = row["label"]
 
         return label_map

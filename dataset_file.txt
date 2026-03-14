@@ -1,0 +1,715 @@
+data/dataset
+├── curve_0.png
+├── curve_1.png
+├── curve_10.png
+├── curve_11.png
+├── curve_12.png
+├── curve_13.png
+├── curve_14.png
+├── curve_15.png
+├── curve_16.png
+├── curve_17.png
+├── curve_18.png
+├── curve_19.png
+├── curve_2.png
+├── curve_20.png
+├── curve_21.png
+├── curve_22.png
+├── curve_23.png
+├── curve_24.png
+├── curve_25.png
+├── curve_26.png
+├── curve_27.png
+├── curve_28.png
+├── curve_29.png
+├── curve_3.png
+├── curve_30.png
+├── curve_31.png
+├── curve_32.png
+├── curve_33.png
+├── curve_34.png
+├── curve_35.png
+├── curve_36.png
+├── curve_37.png
+├── curve_38.png
+├── curve_39.png
+├── curve_4.png
+├── curve_40.png
+├── curve_41.png
+├── curve_42.png
+├── curve_43.png
+├── curve_44.png
+├── curve_45.png
+├── curve_46.png
+├── curve_47.png
+├── curve_48.png
+├── curve_49.png
+├── curve_5.png
+├── curve_50.png
+├── curve_51.png
+├── curve_52.png
+├── curve_53.png
+├── curve_54.png
+├── curve_55.png
+├── curve_56.png
+├── curve_57.png
+├── curve_58.png
+├── curve_59.png
+├── curve_6.png
+├── curve_60.png
+├── curve_61.png
+├── curve_62.png
+├── curve_63.png
+├── curve_64.png
+├── curve_65.png
+├── curve_66.png
+├── curve_67.png
+├── curve_68.png
+├── curve_69.png
+├── curve_7.png
+├── curve_70.png
+├── curve_71.png
+├── curve_72.png
+├── curve_73.png
+├── curve_74.png
+├── curve_75.png
+├── curve_76.png
+├── curve_77.png
+├── curve_78.png
+├── curve_79.png
+├── curve_8.png
+├── curve_80.png
+├── curve_81.png
+├── curve_82.png
+├── curve_83.png
+├── curve_84.png
+├── curve_85.png
+├── curve_86.png
+├── curve_87.png
+├── curve_88.png
+├── curve_89.png
+├── curve_9.png
+├── curve_90.png
+├── curve_91.png
+├── curve_92.png
+├── curve_93.png
+├── curve_94.png
+├── curve_95.png
+├── curve_96.png
+├── curve_97.png
+├── curve_98.png
+├── curve_99.png
+├── test
+│   ├── curve_13.png
+│   ├── curve_20.png
+│   ├── curve_24.png
+│   ├── curve_29.png
+│   ├── curve_44.png
+│   ├── curve_5.png
+│   ├── curve_51.png
+│   ├── curve_8.png
+│   ├── curve_86.png
+│   └── curve_97.png
+├── train
+│   ├── curve_0.png
+│   ├── curve_1.png
+│   ├── curve_11.png
+│   ├── curve_12.png
+│   ├── curve_14.png
+│   ├── curve_15.png
+│   ├── curve_16.png
+│   ├── curve_17.png
+│   ├── curve_18.png
+│   ├── curve_19.png
+│   ├── curve_2.png
+│   ├── curve_21.png
+│   ├── curve_22.png
+│   ├── curve_23.png
+│   ├── curve_25.png
+│   ├── curve_26.png
+│   ├── curve_27.png
+│   ├── curve_30.png
+│   ├── curve_31.png
+│   ├── curve_32.png
+│   ├── curve_34.png
+│   ├── curve_35.png
+│   ├── curve_37.png
+│   ├── curve_39.png
+│   ├── curve_4.png
+│   ├── curve_40.png
+│   ├── curve_41.png
+│   ├── curve_42.png
+│   ├── curve_43.png
+│   ├── curve_46.png
+│   ├── curve_48.png
+│   ├── curve_50.png
+│   ├── curve_53.png
+│   ├── curve_55.png
+│   ├── curve_56.png
+│   ├── curve_57.png
+│   ├── curve_59.png
+│   ├── curve_6.png
+│   ├── curve_60.png
+│   ├── curve_61.png
+│   ├── curve_62.png
+│   ├── curve_63.png
+│   ├── curve_65.png
+│   ├── curve_67.png
+│   ├── curve_69.png
+│   ├── curve_7.png
+│   ├── curve_70.png
+│   ├── curve_71.png
+│   ├── curve_72.png
+│   ├── curve_73.png
+│   ├── curve_74.png
+│   ├── curve_75.png
+│   ├── curve_76.png
+│   ├── curve_78.png
+│   ├── curve_79.png
+│   ├── curve_80.png
+│   ├── curve_81.png
+│   ├── curve_82.png
+│   ├── curve_83.png
+│   ├── curve_85.png
+│   ├── curve_89.png
+│   ├── curve_9.png
+│   ├── curve_90.png
+│   ├── curve_91.png
+│   ├── curve_92.png
+│   ├── curve_93.png
+│   ├── curve_94.png
+│   ├── curve_95.png
+│   ├── curve_98.png
+│   └── curve_99.png
+└── val
+    ├── curve_10.png
+    ├── curve_28.png
+    ├── curve_3.png
+    ├── curve_33.png
+    ├── curve_36.png
+    ├── curve_38.png
+    ├── curve_45.png
+    ├── curve_47.png
+    ├── curve_49.png
+    ├── curve_52.png
+    ├── curve_54.png
+    ├── curve_58.png
+    ├── curve_64.png
+    ├── curve_66.png
+    ├── curve_68.png
+    ├── curve_77.png
+    ├── curve_84.png
+    ├── curve_87.png
+    ├── curve_88.png
+    └── curve_96.png
+
+4 directories, 200 files
+data/dataset
+├── test
+│   └── MENINGOTHELIAL_G1
+│       ├── sample0_0_9.png
+│       ├── sample0_10_0.png
+│       ├── sample0_10_1.png
+│       ├── sample0_13_5.png
+│       ├── sample0_14_1.png
+│       ├── sample0_14_2.png
+│       ├── sample0_15_2.png
+│       ├── sample0_15_3.png
+│       ├── sample0_16_7.png
+│       ├── sample0_16_9.png
+│       ├── sample0_18_1.png
+│       ├── sample0_18_4.png
+│       ├── sample0_19_1.png
+│       ├── sample0_19_7.png
+│       ├── sample0_1_5.png
+│       ├── sample0_1_6.png
+│       ├── sample0_21_9.png
+│       ├── sample0_22_0.png
+│       ├── sample0_23_7.png
+│       ├── sample0_24_3.png
+│       ├── sample0_24_6.png
+│       ├── sample0_24_7.png
+│       ├── sample0_25_0.png
+│       ├── sample0_26_1.png
+│       ├── sample0_26_6.png
+│       ├── sample0_26_9.png
+│       ├── sample0_27_0.png
+│       ├── sample0_27_1.png
+│       ├── sample0_27_3.png
+│       ├── sample0_28_4.png
+│       ├── sample0_29_2.png
+│       ├── sample0_29_3.png
+│       ├── sample0_2_4.png
+│       ├── sample0_2_7.png
+│       ├── sample0_31_2.png
+│       ├── sample0_31_3.png
+│       ├── sample0_34_2.png
+│       ├── sample0_34_3.png
+│       ├── sample0_35_6.png
+│       ├── sample0_35_7.png
+│       ├── sample0_36_4.png
+│       ├── sample0_37_2.png
+│       ├── sample0_37_4.png
+│       ├── sample0_38_5.png
+│       ├── sample0_39_0.png
+│       ├── sample0_39_5.png
+│       ├── sample0_39_6.png
+│       ├── sample0_39_8.png
+│       ├── sample0_3_4.png
+│       ├── sample0_3_5.png
+│       ├── sample0_40_5.png
+│       ├── sample0_40_9.png
+│       ├── sample0_42_1.png
+│       ├── sample0_42_4.png
+│       ├── sample0_42_7.png
+│       ├── sample0_42_8.png
+│       ├── sample0_43_8.png
+│       ├── sample0_44_9.png
+│       ├── sample0_45_6.png
+│       ├── sample0_45_9.png
+│       ├── sample0_47_6.png
+│       ├── sample0_48_1.png
+│       ├── sample0_49_2.png
+│       ├── sample0_49_3.png
+│       ├── sample0_4_2.png
+│       ├── sample0_4_6.png
+│       ├── sample0_6_0.png
+│       ├── sample0_6_2.png
+│       ├── sample0_6_7.png
+│       ├── sample0_6_8.png
+│       ├── sample0_8_2.png
+│       ├── sample0_8_6.png
+│       ├── sample0_9_0.png
+│       ├── sample0_9_1.png
+│       └── sample0_9_8.png
+├── train
+│   └── MENINGOTHELIAL_G1
+│       ├── sample0_0_0.png
+│       ├── sample0_0_1.png
+│       ├── sample0_0_2.png
+│       ├── sample0_0_3.png
+│       ├── sample0_0_4.png
+│       ├── sample0_0_6.png
+│       ├── sample0_0_7.png
+│       ├── sample0_10_2.png
+│       ├── sample0_10_4.png
+│       ├── sample0_10_5.png
+│       ├── sample0_10_6.png
+│       ├── sample0_10_7.png
+│       ├── sample0_10_8.png
+│       ├── sample0_10_9.png
+│       ├── sample0_11_0.png
+│       ├── sample0_11_1.png
+│       ├── sample0_11_2.png
+│       ├── sample0_11_3.png
+│       ├── sample0_11_4.png
+│       ├── sample0_11_5.png
+│       ├── sample0_11_8.png
+│       ├── sample0_11_9.png
+│       ├── sample0_12_0.png
+│       ├── sample0_12_1.png
+│       ├── sample0_12_2.png
+│       ├── sample0_12_3.png
+│       ├── sample0_12_4.png
+│       ├── sample0_12_5.png
+│       ├── sample0_12_7.png
+│       ├── sample0_12_8.png
+│       ├── sample0_13_0.png
+│       ├── sample0_13_1.png
+│       ├── sample0_13_2.png
+│       ├── sample0_13_3.png
+│       ├── sample0_13_6.png
+│       ├── sample0_13_7.png
+│       ├── sample0_14_0.png
+│       ├── sample0_14_3.png
+│       ├── sample0_14_4.png
+│       ├── sample0_14_5.png
+│       ├── sample0_14_6.png
+│       ├── sample0_14_7.png
+│       ├── sample0_14_8.png
+│       ├── sample0_14_9.png
+│       ├── sample0_15_4.png
+│       ├── sample0_15_7.png
+│       ├── sample0_15_8.png
+│       ├── sample0_15_9.png
+│       ├── sample0_16_0.png
+│       ├── sample0_16_1.png
+│       ├── sample0_16_2.png
+│       ├── sample0_16_3.png
+│       ├── sample0_16_4.png
+│       ├── sample0_16_5.png
+│       ├── sample0_16_6.png
+│       ├── sample0_16_8.png
+│       ├── sample0_17_1.png
+│       ├── sample0_17_3.png
+│       ├── sample0_17_4.png
+│       ├── sample0_17_5.png
+│       ├── sample0_17_6.png
+│       ├── sample0_17_7.png
+│       ├── sample0_17_8.png
+│       ├── sample0_18_0.png
+│       ├── sample0_18_2.png
+│       ├── sample0_18_3.png
+│       ├── sample0_18_5.png
+│       ├── sample0_18_6.png
+│       ├── sample0_18_7.png
+│       ├── sample0_18_8.png
+│       ├── sample0_18_9.png
+│       ├── sample0_19_0.png
+│       ├── sample0_19_2.png
+│       ├── sample0_19_3.png
+│       ├── sample0_19_4.png
+│       ├── sample0_19_5.png
+│       ├── sample0_19_6.png
+│       ├── sample0_19_8.png
+│       ├── sample0_19_9.png
+│       ├── sample0_1_1.png
+│       ├── sample0_1_2.png
+│       ├── sample0_1_3.png
+│       ├── sample0_1_4.png
+│       ├── sample0_1_7.png
+│       ├── sample0_1_8.png
+│       ├── sample0_1_9.png
+│       ├── sample0_20_0.png
+│       ├── sample0_20_1.png
+│       ├── sample0_20_2.png
+│       ├── sample0_20_3.png
+│       ├── sample0_20_4.png
+│       ├── sample0_20_5.png
+│       ├── sample0_20_6.png
+│       ├── sample0_20_7.png
+│       ├── sample0_20_8.png
+│       ├── sample0_20_9.png
+│       ├── sample0_21_0.png
+│       ├── sample0_21_1.png
+│       ├── sample0_21_2.png
+│       ├── sample0_21_3.png
+│       ├── sample0_21_4.png
+│       ├── sample0_21_6.png
+│       ├── sample0_21_7.png
+│       ├── sample0_21_8.png
+│       ├── sample0_22_1.png
+│       ├── sample0_22_2.png
+│       ├── sample0_22_3.png
+│       ├── sample0_22_4.png
+│       ├── sample0_22_5.png
+│       ├── sample0_22_6.png
+│       ├── sample0_22_7.png
+│       ├── sample0_22_8.png
+│       ├── sample0_22_9.png
+│       ├── sample0_23_0.png
+│       ├── sample0_23_2.png
+│       ├── sample0_23_3.png
+│       ├── sample0_23_4.png
+│       ├── sample0_23_5.png
+│       ├── sample0_23_6.png
+│       ├── sample0_23_8.png
+│       ├── sample0_24_4.png
+│       ├── sample0_24_5.png
+│       ├── sample0_24_8.png
+│       ├── sample0_24_9.png
+│       ├── sample0_25_1.png
+│       ├── sample0_25_2.png
+│       ├── sample0_25_3.png
+│       ├── sample0_25_4.png
+│       ├── sample0_25_5.png
+│       ├── sample0_25_6.png
+│       ├── sample0_25_7.png
+│       ├── sample0_25_8.png
+│       ├── sample0_25_9.png
+│       ├── sample0_26_0.png
+│       ├── sample0_26_3.png
+│       ├── sample0_26_4.png
+│       ├── sample0_26_5.png
+│       ├── sample0_26_7.png
+│       ├── sample0_27_2.png
+│       ├── sample0_27_4.png
+│       ├── sample0_27_5.png
+│       ├── sample0_27_7.png
+│       ├── sample0_27_8.png
+│       ├── sample0_28_0.png
+│       ├── sample0_28_1.png
+│       ├── sample0_28_2.png
+│       ├── sample0_28_7.png
+│       ├── sample0_28_8.png
+│       ├── sample0_29_0.png
+│       ├── sample0_29_1.png
+│       ├── sample0_29_4.png
+│       ├── sample0_29_5.png
+│       ├── sample0_29_7.png
+│       ├── sample0_29_8.png
+│       ├── sample0_29_9.png
+│       ├── sample0_2_0.png
+│       ├── sample0_2_1.png
+│       ├── sample0_2_2.png
+│       ├── sample0_2_5.png
+│       ├── sample0_2_6.png
+│       ├── sample0_2_8.png
+│       ├── sample0_2_9.png
+│       ├── sample0_30_1.png
+│       ├── sample0_30_2.png
+│       ├── sample0_30_3.png
+│       ├── sample0_30_4.png
+│       ├── sample0_30_5.png
+│       ├── sample0_30_7.png
+│       ├── sample0_30_8.png
+│       ├── sample0_30_9.png
+│       ├── sample0_31_0.png
+│       ├── sample0_31_1.png
+│       ├── sample0_31_4.png
+│       ├── sample0_31_5.png
+│       ├── sample0_31_6.png
+│       ├── sample0_31_7.png
+│       ├── sample0_31_8.png
+│       ├── sample0_31_9.png
+│       ├── sample0_32_0.png
+│       ├── sample0_32_1.png
+│       ├── sample0_32_2.png
+│       ├── sample0_32_3.png
+│       ├── sample0_32_4.png
+│       ├── sample0_32_5.png
+│       ├── sample0_32_6.png
+│       ├── sample0_32_8.png
+│       ├── sample0_32_9.png
+│       ├── sample0_33_2.png
+│       ├── sample0_33_3.png
+│       ├── sample0_33_4.png
+│       ├── sample0_33_6.png
+│       ├── sample0_33_7.png
+│       ├── sample0_33_8.png
+│       ├── sample0_34_0.png
+│       ├── sample0_34_1.png
+│       ├── sample0_34_4.png
+│       ├── sample0_34_5.png
+│       ├── sample0_34_6.png
+│       ├── sample0_34_7.png
+│       ├── sample0_34_8.png
+│       ├── sample0_35_0.png
+│       ├── sample0_35_1.png
+│       ├── sample0_35_4.png
+│       ├── sample0_35_5.png
+│       ├── sample0_35_8.png
+│       ├── sample0_36_1.png
+│       ├── sample0_36_2.png
+│       ├── sample0_36_5.png
+│       ├── sample0_36_7.png
+│       ├── sample0_36_8.png
+│       ├── sample0_36_9.png
+│       ├── sample0_37_0.png
+│       ├── sample0_37_1.png
+│       ├── sample0_37_3.png
+│       ├── sample0_37_5.png
+│       ├── sample0_37_6.png
+│       ├── sample0_37_7.png
+│       ├── sample0_37_8.png
+│       ├── sample0_38_0.png
+│       ├── sample0_38_1.png
+│       ├── sample0_38_2.png
+│       ├── sample0_38_3.png
+│       ├── sample0_38_4.png
+│       ├── sample0_38_6.png
+│       ├── sample0_38_7.png
+│       ├── sample0_38_8.png
+│       ├── sample0_38_9.png
+│       ├── sample0_39_1.png
+│       ├── sample0_39_2.png
+│       ├── sample0_39_4.png
+│       ├── sample0_39_7.png
+│       ├── sample0_39_9.png
+│       ├── sample0_3_0.png
+│       ├── sample0_3_1.png
+│       ├── sample0_3_2.png
+│       ├── sample0_3_3.png
+│       ├── sample0_3_6.png
+│       ├── sample0_3_7.png
+│       ├── sample0_3_8.png
+│       ├── sample0_3_9.png
+│       ├── sample0_40_0.png
+│       ├── sample0_40_2.png
+│       ├── sample0_40_3.png
+│       ├── sample0_40_6.png
+│       ├── sample0_40_7.png
+│       ├── sample0_40_8.png
+│       ├── sample0_41_0.png
+│       ├── sample0_41_1.png
+│       ├── sample0_41_3.png
+│       ├── sample0_41_4.png
+│       ├── sample0_41_5.png
+│       ├── sample0_41_6.png
+│       ├── sample0_41_7.png
+│       ├── sample0_41_9.png
+│       ├── sample0_42_0.png
+│       ├── sample0_42_2.png
+│       ├── sample0_42_5.png
+│       ├── sample0_42_6.png
+│       ├── sample0_42_9.png
+│       ├── sample0_43_0.png
+│       ├── sample0_43_1.png
+│       ├── sample0_43_2.png
+│       ├── sample0_43_3.png
+│       ├── sample0_43_4.png
+│       ├── sample0_43_5.png
+│       ├── sample0_43_6.png
+│       ├── sample0_43_7.png
+│       ├── sample0_43_9.png
+│       ├── sample0_44_0.png
+│       ├── sample0_44_1.png
+│       ├── sample0_44_2.png
+│       ├── sample0_44_3.png
+│       ├── sample0_44_4.png
+│       ├── sample0_44_5.png
+│       ├── sample0_44_8.png
+│       ├── sample0_45_1.png
+│       ├── sample0_45_2.png
+│       ├── sample0_45_3.png
+│       ├── sample0_45_7.png
+│       ├── sample0_45_8.png
+│       ├── sample0_46_0.png
+│       ├── sample0_46_1.png
+│       ├── sample0_46_2.png
+│       ├── sample0_46_3.png
+│       ├── sample0_46_4.png
+│       ├── sample0_46_5.png
+│       ├── sample0_46_6.png
+│       ├── sample0_46_7.png
+│       ├── sample0_46_8.png
+│       ├── sample0_46_9.png
+│       ├── sample0_47_0.png
+│       ├── sample0_47_1.png
+│       ├── sample0_47_2.png
+│       ├── sample0_47_3.png
+│       ├── sample0_47_4.png
+│       ├── sample0_47_5.png
+│       ├── sample0_47_7.png
+│       ├── sample0_47_8.png
+│       ├── sample0_47_9.png
+│       ├── sample0_48_0.png
+│       ├── sample0_48_2.png
+│       ├── sample0_48_3.png
+│       ├── sample0_48_5.png
+│       ├── sample0_48_7.png
+│       ├── sample0_48_8.png
+│       ├── sample0_49_0.png
+│       ├── sample0_49_1.png
+│       ├── sample0_49_4.png
+│       ├── sample0_49_5.png
+│       ├── sample0_49_6.png
+│       ├── sample0_49_7.png
+│       ├── sample0_49_8.png
+│       ├── sample0_49_9.png
+│       ├── sample0_4_0.png
+│       ├── sample0_4_1.png
+│       ├── sample0_4_4.png
+│       ├── sample0_4_5.png
+│       ├── sample0_4_7.png
+│       ├── sample0_4_9.png
+│       ├── sample0_5_1.png
+│       ├── sample0_5_3.png
+│       ├── sample0_5_5.png
+│       ├── sample0_5_6.png
+│       ├── sample0_5_7.png
+│       ├── sample0_6_1.png
+│       ├── sample0_6_4.png
+│       ├── sample0_6_5.png
+│       ├── sample0_6_6.png
+│       ├── sample0_6_9.png
+│       ├── sample0_7_0.png
+│       ├── sample0_7_1.png
+│       ├── sample0_7_4.png
+│       ├── sample0_7_5.png
+│       ├── sample0_7_6.png
+│       ├── sample0_7_7.png
+│       ├── sample0_7_9.png
+│       ├── sample0_8_0.png
+│       ├── sample0_8_1.png
+│       ├── sample0_8_3.png
+│       ├── sample0_8_4.png
+│       ├── sample0_8_5.png
+│       ├── sample0_8_7.png
+│       ├── sample0_8_8.png
+│       ├── sample0_8_9.png
+│       ├── sample0_9_3.png
+│       ├── sample0_9_4.png
+│       ├── sample0_9_5.png
+│       ├── sample0_9_6.png
+│       ├── sample0_9_7.png
+│       └── sample0_9_9.png
+└── val
+    └── MENINGOTHELIAL_G1
+        ├── sample0_0_5.png
+        ├── sample0_0_8.png
+        ├── sample0_10_3.png
+        ├── sample0_11_6.png
+        ├── sample0_11_7.png
+        ├── sample0_12_6.png
+        ├── sample0_12_9.png
+        ├── sample0_13_4.png
+        ├── sample0_13_8.png
+        ├── sample0_13_9.png
+        ├── sample0_15_0.png
+        ├── sample0_15_1.png
+        ├── sample0_15_5.png
+        ├── sample0_15_6.png
+        ├── sample0_17_0.png
+        ├── sample0_17_2.png
+        ├── sample0_17_9.png
+        ├── sample0_1_0.png
+        ├── sample0_21_5.png
+        ├── sample0_23_1.png
+        ├── sample0_23_9.png
+        ├── sample0_24_0.png
+        ├── sample0_24_1.png
+        ├── sample0_24_2.png
+        ├── sample0_26_2.png
+        ├── sample0_26_8.png
+        ├── sample0_27_6.png
+        ├── sample0_27_9.png
+        ├── sample0_28_3.png
+        ├── sample0_28_5.png
+        ├── sample0_28_6.png
+        ├── sample0_28_9.png
+        ├── sample0_29_6.png
+        ├── sample0_2_3.png
+        ├── sample0_30_0.png
+        ├── sample0_30_6.png
+        ├── sample0_32_7.png
+        ├── sample0_33_0.png
+        ├── sample0_33_1.png
+        ├── sample0_33_5.png
+        ├── sample0_33_9.png
+        ├── sample0_34_9.png
+        ├── sample0_35_2.png
+        ├── sample0_35_3.png
+        ├── sample0_35_9.png
+        ├── sample0_36_0.png
+        ├── sample0_36_3.png
+        ├── sample0_36_6.png
+        ├── sample0_37_9.png
+        ├── sample0_39_3.png
+        ├── sample0_40_1.png
+        ├── sample0_40_4.png
+        ├── sample0_41_2.png
+        ├── sample0_41_8.png
+        ├── sample0_42_3.png
+        ├── sample0_44_6.png
+        ├── sample0_44_7.png
+        ├── sample0_45_0.png
+        ├── sample0_45_4.png
+        ├── sample0_45_5.png
+        ├── sample0_48_4.png
+        ├── sample0_48_6.png
+        ├── sample0_48_9.png
+        ├── sample0_4_3.png
+        ├── sample0_4_8.png
+        ├── sample0_5_0.png
+        ├── sample0_5_2.png
+        ├── sample0_5_4.png
+        ├── sample0_5_8.png
+        ├── sample0_5_9.png
+        ├── sample0_6_3.png
+        ├── sample0_7_2.png
+        ├── sample0_7_3.png
+        ├── sample0_7_8.png
+        └── sample0_9_2.png
+
+7 directories, 500 files

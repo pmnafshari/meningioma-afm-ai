@@ -1,56 +1,52 @@
-import sys
-from pathlib import Path
 import torch
-from sklearn.metrics import accuracy_score, confusion_matrix
+import torchvision.models as models
+from torchvision import datasets, transforms
+from torch.utils.data import DataLoader
+from sklearn.metrics import classification_report, confusion_matrix
+import torch.nn as nn
 
-project_root = Path(__file__).resolve().parents[2]
-sys.path.append(str(project_root))
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-from src.models.afm_classifier import AFMClassifier
-from src.training.afm_dataloader import create_dataloader
+transform = transforms.Compose([
+    transforms.Resize((224,224)),
+    transforms.ToTensor(),
+    transforms.Normalize([0.5,0.5,0.5],[0.5,0.5,0.5])
+])
 
+dataset = datasets.ImageFolder("data/dataset/test", transform=transform)
 
-class Evaluator:
+loader = DataLoader(dataset, batch_size=16, shuffle=False)
 
-    def __init__(self, model_path):
+num_classes = len(dataset.classes)
 
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = models.resnet50()
 
-        self.model = AFMClassifier()
+model.fc = nn.Linear(model.fc.in_features, num_classes)
 
-        self.model.load_state_dict(torch.load(model_path, map_location=self.device))
+model.load_state_dict(torch.load("models/afm_resnet50.pth"))
 
-        self.model.to(self.device)
+model = model.to(device)
 
-        self.val_loader = create_dataloader("data/dataset/val")
+model.eval()
 
-    def evaluate(self):
+all_preds = []
+all_labels = []
 
-        self.model.eval()
+with torch.no_grad():
 
-        preds = []
-        labels = []
+    for images, labels in loader:
 
-        with torch.no_grad():
+        images = images.to(device)
 
-            for images in self.val_loader:
+        outputs = model(images)
 
-                images = images.to(self.device)
+        _, preds = torch.max(outputs,1)
 
-                outputs = self.model(images)
+        all_preds.extend(preds.cpu().numpy())
+        all_labels.extend(labels.numpy())
 
-                predicted = torch.argmax(outputs, dim=1)
+print("confusion matrix")
+print(confusion_matrix(all_labels, all_preds))
 
-                preds.extend(predicted.cpu().numpy())
-
-                labels.extend([0] * len(predicted))
-
-        acc = accuracy_score(labels, preds)
-
-        cm = confusion_matrix(labels, preds)
-
-        print("accuracy")
-        print(acc)
-
-        print("confusion matrix")
-        print(cm)
+print("\nclassification report")
+print(classification_report(all_labels, all_preds, target_names=dataset.classes))
