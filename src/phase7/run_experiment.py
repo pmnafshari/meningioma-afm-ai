@@ -96,11 +96,12 @@ def main():
     logger = ExperimentLogger()
 
     model_names = [
-        "resnet50",
-        "efficientnet",
-        "vit",
-        "cnn_lstm"
-    ]
+    "resnet50",
+    "efficientnet",
+    "vit",
+    "cnn_lstm",
+    "afm_net"
+]
 
     learning_rates = [0.001, 0.0003, 0.0001]
 

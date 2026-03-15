@@ -60,3 +60,41 @@ results/
 
 # logs
 *.log
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# environments
+venv/
+.env/
+
+# mac
+.DS_Store
+
+# datasets
+data/raw_afm/
+data/curve_images/
+data/dataset/
+
+# trained models
+models/*.pth
+*.pth
+
+# experiment outputs
+experiments/results.csv
+experiments/final_results/
+results/
+
+# gradcam outputs
+gradcam_outputs/
+
+# notebooks
+.ipynb_checkpoints/
+
+# logs
+*.log
+
+# vscode
+.vscode/

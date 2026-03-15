@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torchvision.models as models
-
+from src.models.afm_net import AFMNet
 
 # ----------------------------------
 # CNN + LSTM Hybrid Model
@@ -89,7 +89,9 @@ def get_model(model_name, num_classes):
 
         return CNNLSTM(num_classes)
 
+    elif model_name == "afm_net":
 
+        return AFMNet(num_classes)  
     else:
 
         raise ValueError("model not supported")
