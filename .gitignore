@@ -31,3 +31,32 @@ experiments/plots/
 
 __pycache__/
 *.pyc
+
+# python
+__pycache__/
+*.pyc
+
+# environments
+venv/
+.env/
+
+# mac
+.DS_Store
+
+# datasets
+data/curve_images/
+data/raw_afm/
+data/dataset/
+
+# models
+models/*.pth
+
+# experiment outputs
+experiments/final_results/
+experiments/gradcam_results/
+
+# results
+results/
+
+# logs
+*.log

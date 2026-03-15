@@ -5,6 +5,10 @@ from sklearn.metrics import confusion_matrix, classification_report
 import pandas as pd
 from pathlib import Path
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from model_factory import get_model
 
 

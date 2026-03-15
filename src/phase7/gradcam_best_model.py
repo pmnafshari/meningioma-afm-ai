@@ -6,6 +6,10 @@ from torchvision import datasets, transforms
 from PIL import Image
 import matplotlib.pyplot as plt
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from model_factory import get_model
 
 

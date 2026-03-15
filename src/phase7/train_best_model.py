@@ -2,6 +2,10 @@ import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from model_factory import get_model
 
 
